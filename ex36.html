@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /*
+        36) Faça um programa que leia 10 valores inteiros e positivos e: 
+        - Encontre o maior valor 
+        - Encontre o menor valor 
+        - Calcule a média dos números lidos
+        */
+        var i=1;
+        var somavalores = 0;
+        var maior, menor;
+
+        while(i<=10){
+          var valor = parseInt(prompt('Digite um número:'));
+          somavalores = somavalores + valor;
+          if(i==1){
+            maior = valor;
+            menor = valor;
+        }
+          if(valor<menor){
+            menor = valor;
+        }
+          else if (valor>maior){
+            maior = valor;
+        }
+          i++;
+        }
+alert('Maior = ' + maior + '\nMenor = ' + menor + '\nMédia = ' + (somavalores/10).toFixed(2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+      /*Escrever um programa declarando três variáveis do tipo inteiro (a, b e c). Ler um valor maior que zero para cada
+     variável (se o valor digitado não é válido, mostrar mensagem e ler novamente). Exibe o menor valor lidomultiplicado
+    pelo maior e o maior valor dividido pelo menor.*/
+
+
+
+    let a = parseInt(prompt('entre o valor de a'));
+       while(a<=0){
+           a = parseInt(prompt('entre o valor de a'));
+       }
+
+       let b = parseInt(prompt('entre o valor de b'));
+       while(a<=0){
+           b = parseInt(prompt('entre o valor de b'));
+       }
+
+       let c = parseInt(prompt('entre o valor de c'));
+       while(a<=0){
+           c = parseInt(prompt('entre o valor de c'));
+       }
+       let maior = 0, meio = 0, menor = 0;
+       if((a==b && b==c)||(a==b && b<c)||(a<b && b<c)||(b==c && b>a)){
+          menor = a;
+          meio = b;
+          maior = c;
+        }
+        else if((a<c && c<b)||(a==c && c<b)||(b==c && c>a)){
+         menor = a;
+         meio = c;
+         maior = b;
+        }
+        else if((b<a && a<c)||(b==a && a<c)||(a==c && a<b)){
+         menor = b;
+         meio = a;
+         maior = c;
+        }
+        else if((b<c && c<a)||(b==c && c<a)||(c==a && c>a)){
+         menor = b;
+         meio = c;
+         maior = a;
+        }
+        else if((c<a && a<b)||(c==a && a<b)||(a==b && a>b)){
+         menor = c;
+         meio = a;
+         maior = b;
+        }
+        else if((c<b && b<a)||(c==b && b<a)||(b==a && b>a)){
+         menor = c;
+         meio = b;
+        maior = a;
+        }
+        alert('menor X Maior= ' + parseFloat((menor*maior)) + '\nmaior / menor  ' + parseFloat((maior/menor)).toFixed(2));
+
+        //tofixed funciona para deixar duas casas decimais nas operações.
+
+  
+
+        
+        
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

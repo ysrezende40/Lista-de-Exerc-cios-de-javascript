@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /*Escreva um programa que exiba as seguintes opções e realize os que se pede em cada uma delas:
+        1 – Adição
+        2 – Subtração
+        3 – Multiplicação
+        4 – Divisão*/
+      var cond = prompt('entre com a operação desejada ex: adição, subtração, divisão, mutiplicação.');
+      var valor1 = parseInt(prompt('entre com o valor'));
+      var valor2 = parseInt(prompt('entre com o valor'));
+      var adição = valor1 + valor2;
+      var subtração = valor1 - valor2;
+      var divisão = valor1/valor2;
+      var mutiplicação = valor1*valor2;
+      
+      
+      switch(cond){
+          case 'adição':
+           alert('o resultado da soma e: ' + adição);
+           break;
+           case 'subtração':
+           alert('o resultado da soma e: ' + subtração);
+           break;  
+           case 'divisão':
+           alert('o resultado da soma e: ' + divisão);
+           break;  
+           case 'mutiplicação':
+           alert('o resultado da soma e: ' + mutiplicação);
+           break;
+           default:
+           alert('recarre e selecione uma operação');                          
+         }
+
+
+      
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

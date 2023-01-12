@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /* Escreva um programa que leia um conjunto de números positivos e exiba o menor e o maior. Suporemos que o
+        número de elementos deste conjunto não é conhecido, e que um número negativo será utilizado para sinalizar o fim
+        dos dados. */
+
+    var numeroTotal =  parseInt(prompt('insira o valor '));
+    var menor = 0;
+    var maior = 0;
+
+    if(numeroTotal >= 0 ){
+       menor = numeroTotal
+       maior = numeroTotal
+    }
+
+    while(numeroTotal>=0){
+				numeroTotal = parseInt(prompt('insira o valor '));
+					if(numeroTotal > maior){
+						maior = numeroTotal;
+					}
+					if(numeroTotal < menor && numeroTotal >= 0){
+						menor = numeroTotal;
+					}
+			}
+			alert("\nO maior número foi: "+maior+" \ne o menor foi: "+menor);
+		
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

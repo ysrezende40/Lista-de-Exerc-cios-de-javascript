@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+         /*
+37- O programa deverá apresentar uma tela de entrada com as seguintes opções:
+
+1 – Adição
+2 – Subtração
+3 – Multiplicação
+4 – Divisão
+Informe a opção:
+A partir da opção escolhida, o programa deverá solicitar para que o usuário digite dois números. Em seguida, o
+programa deve exibir o resultado da opção indicada pelo usuário e perguntar ao usuário se ele deseja voltar ao
+menu principal. Caso a resposta seja  ́S ́ ou  ́s ́, deverá voltar ao menu, caso contrário deverá encerrar o programa.
+*/
+
+do {  
+  var operacao = prompt('Selecione uma opção: \n1 – Adição \n2 – Subtração \n3 – Multiplicação \n4 – Divisão');
+  var resposta = "S";
+  switch(operacao){
+    case "1":
+      //adição
+      var v1 = parseFloat(prompt('Digite o valor 1'));
+      var v2 = parseFloat(prompt('Digite o valor 2'));
+      resposta = prompt('Soma = ' + (v1+v2) + '\nDeseja continuar? (digite "S" ou "s" para SIM)');
+      break;
+    case "2":
+      //subtração
+      var v1 = parseFloat(prompt('Digite o valor 1'));
+      var v2 = parseFloat(prompt('Digite o valor 2'));
+      resposta = prompt('Subtração = ' + (v1-v2) + '\nDeseja continuar? (digite "S" ou "s" para SIM)');
+      break;
+    case "3":
+      //multiplicação
+      var v1 = parseFloat(prompt('Digite o valor 1'));
+      var v2 = parseFloat(prompt('Digite o valor 2'));
+      resposta = prompt('Multiplicação = ' + (v1*v2) + '\nDeseja continuar? (digite "S" ou "s" para SIM)');
+      break;
+    case "4":
+      //divisão
+      var v1 = parseFloat(prompt('Digite o valor 1'));
+      var v2 = parseFloat(prompt('Digite o valor 2'));
+      resposta = prompt('Divisão = ' + (v1/v2) + '\nDeseja continuar? (digite "S" ou "s" para SIM)');
+      break;
+  }
+  
+} while (resposta == "S" || resposta == "s");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

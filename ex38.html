@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /*Faça um programa que leia as variáveis C e N, respectivamente código e número de horas trabalhadas de um
+        operário. E calcule o salário sabendo-se que ele ganha R$ 10,00 por hora. Quando o número de horas exceder a
+        50, calcule o excesso de pagamento armazenando-o na variável E, caso contrário zerar tal variável. A hora
+        excedente de trabalho vale R$ 20,00. No final do processamento imprimir o salário total e o salário excedente. O
+        programa só deve parar de rodar quando o usuário responder "S" na seguinte pergunta, "Deseja encerrar o
+        programa?".*/
+     
+      do{ 
+        var c = prompt('entre com seu código');
+        var n = parseInt(prompt('entre com as horas trabalhadas'));
+        var horas = 10;
+        var valor = 0;
+        //var horasex = 20;
+        var resposta = 'S';
+        if(n>50){
+            n = n + valor;
+            valor++;
+            alert('seu salario e: ' + (horas*n));
+            alert('o valor excendente e ' + (valor*20));
+            resposta = prompt('se desejar encerrar o programa por favor digite s');
+            
+        }
+        else if(n<50){
+            alert('seu salario e: ' + (horas*n));
+            resposta = prompt('se desejar encerrar o programa por favor digite s');
+
+        }
+         
+        }while (resposta == "S");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

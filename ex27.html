@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /*
+       27) Escreva um programa que leia: - a quantidade de números que deverá processar; - os números que deverá processar,e calcule e exiba, para cada número a ser processado o seu fatorial.
+       Lembrete: O fatorial de um número N é dado pela fórmula: N! = 1 * 2 * 3 * 4 * 5 * ... * N
+        2
+        */
+var msg = 'FATORIAIS\n';
+var qtadeValores = parseInt(prompt('Digite a quantidade de números que deseja calcular o FATORIAL!'));
+for(var z=1 ; z<= qtadeValores ; z++){
+  var fatorial = parseInt(prompt('Digite o número para calcular o !')); //entrada
+  //processa o fatorial
+  for(var i=1, result = 1; i<=fatorial ; i++){
+    result = result * i; // alternativa -> result *= i;
+  }
+  msg = msg + fatorial + '! = ' + result + '\n'; //monta o resultado
+}
+alert(msg);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /*Uma rainha requisitou os serviços de um monge e disse-lhe que pagaria qualquer preço. O monge, necessitando
+        de alimentos, indagou à rainha sobre o pagamento, se poderia ser feito com grãos de trigo dispostos em um tabuleiro
+        de xadrez, de tal forma que o primeiro quadro deveria conter apenas um grão e os quadros subseqüentes, o dobro
+        do quadro anterior. A rainha achou o trabalho barato e pediu que o serviço fosse executado, sem se dar conta de
+        que seria impossível efetuar o pagamento. Faça um programa para calcular o número de grãos que o monge
+        esperava receber.*/
+        var s = 0;
+        var i = 0;
+        var g = 1;
+        while( i <= 64){
+            i = i + 1
+            if(i > 1){
+                g = g *2
+                s = s + g;
+                i++
+
+            }
+            alert('serão pagos' + ' ' + s + ' ' +  'grãos');
+        }
+
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

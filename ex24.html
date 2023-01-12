@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /*Escreva um programa que leia dois números inteiros e apresente as opções para usuário escolher o que deseja
+        realizar:
+        1 – Verificar se um dos números lidos é ou não múltiplo do outro
+        2 – Verificar se os dois números lidos são pares
+        3 – Verificar se a média dos dois números é maior ou igual a 7.
+        4 – Sair*/
+     /*% e o resto de uma divisão ou seja se o resto de uma divisão for 0 ele e um numero par, ou os numeros são mutiplos*/
+
+     var cond = prompt('entre com a operação desejada: \n 1-Verificar se um dos números lidos é ou não múltiplo do outro \n 2-Verificar se os dois números lidos são pares \n 3– Verificar se a média dos dois números é maior ou igual a 7 \n 4 – Sair' );
+      var valor1 = parseInt(prompt('entre com o valor 1'));
+      var valor2 = parseInt(prompt('entre com o valor 2'));
+      var valor3 = parseInt(prompt('entre com o valor 3'));
+
+
+      switch(cond){
+        case '1':
+            if(valor1 % valor2 ===0 || valor2 % valor1 ===0 ){
+                alert('os numeros são mutiplos');
+
+            }
+            else{
+                alert('os numeros não são mutiplos');
+            }
+            
+        case '2': 
+            if(valor1&&valor2 %2 ===0){
+                alert('o valor 1 e 2 são pares');
+
+            }
+            else{
+                alert('os numeros não são pares');
+            }
+        case '3': 
+           if((valor1+valor2)/2>=7){
+            alert('a media do valor 1 e 2 e maior ou igual a 7');
+
+           } 
+           else{
+            alert('a media do valor 1 e 2 e menor que 7');
+           }
+        case '4': 
+            alert('obrigado');         
+    }
+    //fonte de ajuda: https://horadecodar.com.br/2020/09/04/saber-se-numero-e-par-ou-impar-em-javascript/
+
+
+
+
+
+      
+      
+    
+
+
+
+    </script>
+
+    
+</body>
+</html>

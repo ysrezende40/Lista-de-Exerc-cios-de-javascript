@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /*
+Escreva um programa que calcule e exiba a média da nota dos alunos de uma turma em uma prova. O número de alunos é desconhecido. Os dados de um aluno são: número de matrícula e a sua nota na prova em questão.
+
+let contaAluno = 0, nota = 0.0, matricula = 0, opcao = 'S', somaDasNotas = 0.0;
+while(opcao == 'S' || opcao == 's'){
+  matricula = parseInt(prompt('Digite a matricula do(a) aluno(a)'));
+  nota = parseFloat(prompt('Digite a nota do(a) aluno(a)'));
+  somaDasNotas = somaDasNotas + nota;
+  opcao = prompt('Deseja digitar mais uma nota? (S) ou (N)');
+  contaAluno++;
+}*/
+for(var contaAluno = 0, nota = 0.0, matricula = 0, opcao = 'S', somaDasNotas = 0.0; opcao == 'S' || opcao == 's'; somaDasNotas = somaDasNotas + nota, contaAluno++){
+  matricula = parseInt(prompt('Digite a matricula do(a) aluno(a)'));
+  nota = parseFloat(prompt('Digite a nota do(a) aluno(a)'));
+  opcao = prompt('Deseja digitar mais uma nota? (S) ou (N)');
+}
+alert('Media da sala é: ' + parseFloat((somaDasNotas/contaAluno)).toFixed(2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+     /*Tendo como dados de entrada a altura e o sexo de uma pessoa, faça um programa que calcule seu peso ideal,
+     utilizando as seguintes fórmulas: (h = altura)
+    - Para homens: (72.7*h) - 58
+    - Para mulheres: (62.1 *h) - 44.7*/
+
+
+
+
+    var sexo = parseInt(prompt('digite seu sexo 1-homem \n 2-mulher'));
+    var h = parseFloat(prompt('digite sua altura'));
+
+    switch(sexo){
+      case 1:
+           alert('seu peso ideal e:' + ((72.7*h) - 58).toFixed(2));
+           break;
+      case 2:
+           alert('seu peso ideal e:' + ((62.1 *h) - 44.7).toFixed(2));
+           break;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

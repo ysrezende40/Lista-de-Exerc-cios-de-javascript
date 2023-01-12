@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+   do{
+    var sair = 's';
+    
+   var entrada =  prompt('1 – Conversão de Graus Celsius em Graus Fahrenheit \n 2 – Conversão de Graus Fahrenheit em Graus Celsius \n 3 – Peso ideal do homem \n 4 – Peso ideal da mulher \n caso deseje encerrar o programa digite s');
+    
+   
+   switch(entrada){
+    case '1': 
+     var c = parseInt(window.prompt('digite o valor da temperatura em celcius '));
+     var f = (9 * c + 160) / 5;
+     window.alert('a temperatura convertida em faraheint e= ' + f);
+     break;
+     case '2': 
+     var f = parseInt(window.prompt('digite a temperatura em fahrenheit'));
+     var c = (f - 32) * 5 / 9;
+    window.alert('a temperatura convertida em celcius e = ' +  c  );
+     break;
+     case '3':
+     var h = parseFloat(prompt('digite sua altura'));
+     alert('seu peso ideal e:' + ((72.7*h) - 58));
+           break;
+     case '4': 
+     var h = parseFloat(prompt('digite sua altura'));
+     alert('seu peso ideal e:' + ((62.1 *h) - 44.7));
+           break;
+           default:
+			alert("obrigado.\n");
+
+     
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }while(resposta = 'S' || 's');
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        /*Escrever um programa que leia um conjunto de números positivos, e exiba se o número lido é par ou ímpar. Exiba
+        ao final a soma total dos números pares lidos e também a soma dos números ímpares lidos. Suporemos que o
+        número de elementos deste conjunto não é conhecido, e que um número negativo será utilizado para sinalizar o fim
+        dos dados.*/
+    var somapar = 0;
+    var somaimpar = 0;
+    var valor = 0;
+    while(valor>=0){
+    if(valor%2==0){
+            alert('par');
+            somapar = somapar + valor;
+     }
+     else if(valor%2==1){
+         alert('impar');
+         somaimpar = somaimpar + valor;
+    }
+    valor = parseInt(prompt('Digite um numero:'));
+    
+   
+    }
+    alert('a soma dos pares e: ' + somapar);
+    alert('a soma dos impares e: ' + somaimpar);
+   
+
+
+
+
+     
+    
+    
+
+    
+    
+    
+    
+
+            
+
+       
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
